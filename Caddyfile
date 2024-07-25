@@ -1,0 +1,15 @@
+http://:8080 {
+	handle {
+		basicauth {
+			{$HTTP_BASIC_AUTH_USER} {$HTTP_BASIC_AUTH_PASSWORD}
+		}
+
+		reverse_proxy {
+			to http://private-website:5000
+		}
+	}
+
+	handle_errors {
+		respond "{http.error.status_code} {http.error.status_text}"
+	}
+}
