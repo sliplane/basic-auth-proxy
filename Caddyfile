@@ -1,6 +1,6 @@
 http://:8080 {
 	handle {
-		basicauth {
+		basic_auth {
 			{$HTTP_BASIC_AUTH_USER} {$HTTP_BASIC_AUTH_PASSWORD}
 		}
 
