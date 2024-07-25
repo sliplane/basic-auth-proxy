@@ -1,7 +1,7 @@
 http://:8080 {
 	bind 0.0.0.0
 
-	basic_auth {
+	basicauth {
 		{$HTTP_BASIC_AUTH_USER} {$HTTP_BASIC_AUTH_PASSWORD}
 	}
 
@@ -10,6 +10,6 @@ http://:8080 {
 	}
 
 	handle_errors {
-		respond "200 OK"
+		respond "{http.error.status_code} {http.error.status_text}" 200
 	}
 }
