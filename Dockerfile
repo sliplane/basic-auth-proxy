@@ -4,3 +4,4 @@ EXPOSE 8080
 
 COPY Caddyfile /etc/caddy/Caddyfile
 
+ENTRYPOINT [ "./entrypoint.sh" ]
