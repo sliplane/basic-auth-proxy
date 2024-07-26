@@ -23,6 +23,6 @@ Congratulations! You have now setup a basic auth reverse proxy for your private 
 
 After opening the URL of your new auth proxy service you should be prompted to enter your username and password that you defined in the environment variables.
 
-![auth prompt](screenshot.png|width=200)
+<img src="screenshot.png" width="400">
 
 **If you need any help, feel free to open an issue or through our support chat on [Sliplane](https://sliplane.io).**
